@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn"  >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+  <meta name="tgtest-ignore" content="all,description,title,keywords">
+  <meta name="Description" content="云顶之弈" />
+  <meta name="Keywords" content="云顶之弈" />
+  <title></title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+<div class="wrap" >
+  <div id="content" class="content" >
+    <div class="main-fame"  >
+
+      <div class="hotNewest" >
+
+
+        <!-- 游戏版本 & 手机掌盟看攻略按钮 & 最新  End -->
+
+        <!-- 最新阵容列表 Start -->
+        <div class="hotList" ></div>
+        <!-- 最新阵容列表 End -->
+        <div class="bglinear" ></div>
+      </div>
+
+      <div id="bg" ></div>
+
+      <!-- 弹窗-阵容看点 -->
+      <div class="dialog pop-focus" id="pop-focus" style="display:none">
+        <div class="dia-con">
+          <ul class="focus-box"></ul>
+        </div>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">×</a>
+      </div>
+
+      <!-- job-equip装备弹窗-->
+      <div class="hover2" style="display: none;"></div>
+
+      <!-- job-name羁绊图标 hover状态 羁绊效果&羁绊组成-->
+      <div class="hover3" style="display: none;"></div>
+
+      <!-- pic棋子图标 hover状态 棋子羁绊&推荐装备&技能描述-->
+      <div class="hover4" style="display: none ;"></div>
+
+      <div class="pop-hero" id="pop-hero" style="display: none;"></div>
+
+
+
+      <div class="hover2" style="display: none; left: 388px; top: 586px;">
+        <div class="hover2-cont">
+          <div class="hover2-box1" style="border:none">
+            <div class="hover2-equip"><img src="//game.gtimg.cn/images/lol/act/img/tft/equip/NeedlesslyLargeRod.png"></div>
+            <div class="hover2-msg">
+              <h2 class="hover2-title">无用大棒</h2>
+              <p class="hover2-text">
+                +10法强
+              </p>
+            </div>
+          </div>
+          <div class="hover2-box2" style="display:none">
+            <p>配方:</p>
+
+          </div>
+          <div class="hover2-border1"></div>
+          <div class="hover2-border2"></div>
+        </div>
+    </div>
+
+
+    </div>
+  </div>
+</div>
+
+<script src="js/script-rclient-window-messenger.js"></script>
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/milo.js"></script>
+<script src="js/client-helper.js" charset="utf-8"></script>
+<script src="js/subnav.js"></script>
+<!-- 数据统计 -->
+<script src="js/index.js"></script>
+<script src="js/init.js"></script>
+<script src="js/eas.js"></script>
+<script src="js/ping_tcss_tgideas_https_min.js"></script>
+
+<script>
+  window.parent.postMessage({
+    type: "RClientWindowMessenger",
+    messageType: 'rcp-fe-lol-home-loaded'
+  }, '*');
+
+  var setSite = {
+    siteType: "os",
+    pageType: "a20220217tftset65",
+    pageName: "云顶之弈",
+    project: "ingame",
+    osact: "ingame"
+  }
+  if (typeof (pgvMain) == 'function') pgvMain();
+</script>
+</body>
+</html>
+<!-- #t6Hl8#BDC676446A956740243F69987674820F -->

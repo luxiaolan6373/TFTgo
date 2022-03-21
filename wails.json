@@ -1,0 +1,31 @@
+{
+  "name": "TFTGO",
+  "frontend:build": "",
+  "frontend:install": "",
+  "frontend:dev": "",
+  "frontend:dev:watcher": "",
+  "wailsjsdir": "./frontend",
+  "version": "2",
+  "Path": "",
+  "BuildDir": "",
+  "outputfilename": "TFTGO阵容推荐.exe",
+  "OutputType": "",
+  "Platform": "",
+  "runNonNativeBuildHooks": false,
+  "postBuildHooks": null,
+  "Author": {
+    "name": "luxiaolan6373",
+    "email": "3603799192@qq.com"
+  },
+  "Info": {
+    "companyName": "TFTGO",
+    "productName": "TFTGO",
+    "productVersion": "1.0.0",
+    "copyright": "懒人智能 本工具只为学习golang编程",
+    "comments": "QQ群 (952120925)"
+  },
+  "debounceMS": 100,
+  "devserverurl": "http://localhost:34115",
+  "appargs": "",
+  "nsisType": ""
+}

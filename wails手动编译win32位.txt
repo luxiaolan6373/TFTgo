@@ -1,0 +1,49 @@
+wails 手动编译win32位程序
+
+方法1 比较麻烦，而且最后 任务栏和窗口的图标不会显示
+
+
+要安装 cli 工具：go get github.com/leaanthony/winicon/cmd/winicon
+要使用该库：go get github.com/leaanthony/winicon
+
+将ico文件换换成png
+
+
+go install github.com/tc-hib/go-winres@latest
+这里需要png格式的图标
+运行以创建目录go-winres init winres
+修改 的内容 winres.json
+运行创建syso文件 go-winres make
+
+最后编译运行命令行
+go env -w GOARCH=386
+go build -tags desktop,production -ldflags "-w -s -H windowsgui"
+
+方法2 最稳健简单的方法，并且图标不会异常：
+简单无脑傻瓜式，感谢群友 ※听雨※ 和管理员 临渊羡鱼 提供思路
+
+1.先正常编译  我们暂且叫这个exe为  无图标.exe
+go env -w GOARCH=386
+go build -tags desktop,production -ldflags "-w -s -H windowsgui"
+
+2.用wails build 编译  我们暂且叫这个exe为  有图标.exe
+
+3.使用ResourceHacker工具将wails 编译的 有图标.exe 的信息拷贝到go build编译 无图标.exe 中
+
+具体操作。。
+
+1.下载ResourceHacker
+http://www.angusj.com/resourcehacker/resource_hacker.zip
+
+2.运行后选择 打开（open）  选中我们的go build 无图标.exe   然后会发现一片空白。。
+
+3.点击编辑 Action 的 Add from a Resource file (*.res, *.mui,*.dll,*.exe) 菜单选项  然后把有图标.exe  导入进来。
+
+这就实现了信息的导入了
+
+然后保持即可。
+
+
+
+
+

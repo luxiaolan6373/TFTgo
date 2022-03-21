@@ -1,0 +1,459 @@
+@charset "UTF-8";
+blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,select,td,textarea,th,ul{padding:0;margin:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,b,caption,cite,code,dfn,em,strong,th,var{font-weight:400;font-style:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%}
+q:after,q:before{content:""}
+abbr,acronym{border:0}
+strong,th{font-weight:700}
+a{text-decoration:none;cursor:pointer;-webkit-transition:color .5s ease-out;transition:color .5s ease-out}
+a:hover{text-decoration:none;color:#6a91b6;filter:brightness(1.2)!important;-webkit-filter:brightness(1.2)!important}
+button,input,option,select,textarea{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input:focus,textarea:focus{outline:0}
+body,html{overflow:hidden}
+body{font:12px "\5FAE\8F6F\96C5\9ED1",TimesNewRoman,'Times New Roman',Times,Baskerville,Georgia,serif;color:#a09b8c;background-color:#000;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+.btn{background-position:0 0;height:34px;width:120px}
+.dia{background-position:0 -39px;height:180px;width:342px}
+.wrap{position:relative;width:1055px;height:720px;display:block;}
+.header{position:relative;width:985px;margin:0 auto;padding-top:79px;z-index:1000}
+.Menu{margin-top:9px}
+.Menu-list{display:-webkit-flex;display:flex;height:40px;text-shadow:0 0 2px #000;font-size:12px}
+.Menu-list li{display:flex;position:relative;cursor:pointer;margin-right:30px;min-width:28px;white-space:nowrap;text-overflow:ellipsis}
+.Menu-list a{position:relative;color:#cdbe91;text-align:center;letter-spacing:.1em;-webkit-font-smoothing:subpixel-antialiased;font-family:'LoL Display',"\5FAE\8F6F\96C5\9ED1",'Times New Roman',Times,Baskerville,Georgia,serif}
+.Menu-list li a:hover{color:#f0e6d2}
+.header-base .tft.active a{color:#f0e6d2}
+.SubNavList a{color: #c1b99e;}
+.header-base .tft.active a:before{content:'';position:absolute;top:20px;left:0;height:1px;width:100%;background:linear-gradient(to left,transparent,#cdbe91,transparent)}
+#bg{position:absolute;left:0;top:0;width:1055px;height:720px;z-index:-1;background:url(//game.gtimg.cn/images/lol/act/a20220217tftset65/bg.jpg) no-repeat 0 80px;background-size: 100%;opacity:1}
+#bg:after{content:'';position:absolute;left:0;top:0;width:1055px;height:718px}
+#bg1{position:absolute;left:0;top:0;width:1055px;height:718px;z-index:-1;background-repeat:no-repeat;opacity:0}
+#bg1:after{content:'';position:absolute;left:0;top:0;width:1055px;height:718px}
+.clearfix{zoom:1}
+.clearfix::after{content:'';display:block;height:0;visibility:hidden;clear:both}
+.jb{background:linear-gradient(to bottom,#fddf98,#cd9629);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+div{outline:0}
+.content{width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
+.content::after{width: 100%;height: 100px;position: absolute;top: 80px;left: 0;display: block;content: "";clear: both;z-index: 20;opacity: 0.75;background-image: linear-gradient(to bottom, #000,transparent);}
+
+::-webkit-scrollbar{width:5px;border-radius:4px;background:transparent}
+::-webkit-scrollbar-thumb{height:1px;border-radius:4px;background-color:#2c2973}
+::-webkit-scrollbar-thumb:hover{height:1px;border-radius:4px;background-color:#d9c67a}
+::-webkit-scrollbar-thumb:disabled{background-color:#463c76}
+
+.hero-cont ::-webkit-scrollbar-thumb,
+.pop-focus ::-webkit-scrollbar-thumb {
+    height:1px;border-radius:4px;background-image: linear-gradient(#6baaff, #be7eff);
+}
+/*!style*/
+.main-nav{width:200px;height:438px;position:fixed;top:140px;left:0;bottom:0;z-index:9999}
+
+@font-face {
+    font-family: 'sellnum-4';
+    src: url('//game.gtimg.cn/images/lol/common/sell/font/sellnum-4.eot');
+    src: url('//game.gtimg.cn/images/lol/common/sell/font/sellnum-4.woff') format('woff'),url('//game.gtimg.cn/images/lol/common/sell/font/sellnum-4.ttf') format('truetype'),url('//game.gtimg.cn/images/lol/common/sell/font/sellnum-4.svg') format('svg');
+}
+
+/* frame */
+.main-fame{height: 100%; }
+.hotNewest{width: 100%; height:  100%; padding-top:1px;position: relative; overflow: hidden; z-index: 101; }
+/* frame end */
+
+/* hotTitle */
+.hotTitle{width: 973px; font-size: 0; height: 28px; margin: 0 auto; position: relative; text-align: right;}
+.hotTitle .versions, .hotTitle .qr-code {display: inline-block; *display: inline; *zoom:1; vertical-align: middle;}
+
+.hotTitle .versions{width: 102px; font-size: 14px; color: #d2e5ff; line-height: 28px;}
+
+.hotTitle .headline{line-height: 28px;font-weight: bold;font-size: 16px;color: #ebfffb; float: right;padding-right: 15px;}
+
+.hotTitle .qr-code { width: 120px;height: 28px;position: relative;cursor: pointer; }
+.hotTitle .qr-code-btn { position: relative;width: 118px;height: 32px;font-size: 12px;color: #f7d1ff;text-align: center;line-height: 32px;letter-spacing: 1px;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/new-btn-qrcodebtn.png) no-repeat;background-size: 100% 100%; }
+.hotTitle .qr-code-img { display: none;width: 90px;height: 90px;position: absolute;top: 50px;left: 2.5px;transition: all .5s ease;z-index: 2; }
+.hotTitle .qr-code-img img { width: 100%;height: 100%;display: block;position: relative;z-index: 3;top: -15px;left: 12px;}
+/* .hotTitle .qr-code-icon { width: 135px;height: 135px;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/qr-code-icon.png) no-repeat;background-size: 100% 100%;position: absolute;top: -10px;left: -10px;z-index: 2; } */
+.hotTitle .qr-code-icon { width: 94px;height: 94px;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/codebg.png) no-repeat;background-size: 100% 100%;position: absolute;top: -17px;left: 10px;z-index: 2; }
+.hotTitle .qr-code:hover .qr-code-img { display: block;z-index: 10; }
+/* hotTitle end */
+
+/* hotList */
+.hotList{width: 94%; font-size: 0; height: 100%; overflow-x: hidden; overflow-y: scroll; margin: 2px auto 0; position: relative;}
+.hotList .box{width: 98%; margin: 0px 0 0 0px; position: relative;}
+.hotList .box:first-of-type{margin-top: 0;}
+
+.hotList .box .item { width: 100%;height: 106px;display: flex;display: -webkit-flex;align-items: center;opacity: 1;position: relative;margin: 0 auto 20px;cursor: pointer; background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/item-bg.png) no-repeat;background-size: 100% 100%;}
+.hotList .box .item-bg { position: absolute;top: 1px;left: 1px;width: 330px;height: 104px;opacity: .8;background-position: 50% -25px;background-repeat: no-repeat;background-size: 100%;pointer-events: none;filter: opacity(0.5);   -webkit-mask-image: linear-gradient(90deg,rgba(255,255,255,0) ,rgba(255,255,255,1)30% 70%, rgba(255,255,255,0));
+    mask-image: linear-gradient(90deg,rgba(255,255,255,0) ,rgba(255,255,255,1)30% 70%, rgba(255,255,255,0));}
+/* .hotList .box .item-bg:after { content: "";background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/item-chess-mc1.png) no-repeat;background-size: 100%;position: absolute;top: 0;left: 0;width: 100%;height: 100%; }
+.hotList .box .item-bg::before { content: "";background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/item-chess-mc2.png) no-repeat;background-size: auto 100%;position: absolute;top: 1px;right: -215px;width: 100%;height: 100%; } */
+.hotList .box .item:hover { background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/item-bg-hover.png) no-repeat;background-size: 100% 100%; }
+/* .hotList .box .item:hover::after { content: "";width: 974px;height: 107px;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/item-border.png) no-repeat;background-size: 100% 100%;position: absolute;top: 10px;left: 0px;pointer-events: none; } */
+.hotList .box .item::before {
+    content: "";width: 19px;height: 12px;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/item-click.png) no-repeat;background-size: 100%;position: absolute;top: 46px;right: 30px;pointer-events: none;transform: rotate(0deg);-ms-transform: rotate(0deg);/* Internet Explorer */
+    -moz-transform: rotate(0deg);/* Firefox */
+    -webkit-transform: rotate(0deg);/* Safari ďż???? Chrome */
+    -o-transform: rotate(0deg);/* Opera */
+    transition: transform .5s;
+}
+.hotList .box.unfold .item::before { transform: rotate(180deg);-ms-transform: rotate(180deg);-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);-o-transform: rotate(180deg);transition: transform .5s; }
+.hotList .box .item-info { color: #fff;position: relative;z-index: 2; }
+.hotList .box .item-info h2 { width: 293px;font-size: 17px;font-weight: bold;text-align: left;margin-left: 6px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap; }
+.hotList .box .item-info .info-tag1 { width: 54px;height: 20px;padding: 0 3px;line-height: 19px;text-align: center;font-size: 12px;font-weight: bold;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/spanbg.png);margin-left: 15px;background-size:100% 100%;}
+.hotList .box .item-info .info-tag2 { font-weight: bold;font-size: 12px;margin-left: 12px; }
+/*.hotList .box .item-info .info-tag1 span,.hotList .box .item-info .info-tag2 span { color: transparent;background-image: linear-gradient(to bottom,#ebffcf,rgb(116, 241, 189));-webkit-background-clip: text;background-clip: text; }*/
+.hotList .box .item-info .info-tag1 span {color: #ebeae1;}
+.hotList .box .item-info .info-tag2 span {color: #d2e5ff;}
+
+.hotList .box .item-info .info-tips,.hotList .box .details .details-title .info-tips2 { width: 30px;height: 30px;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/item-tips.png) no-repeat;background-size: 100%;cursor: pointer;margin-left: 6px;position: relative; }
+.hotList .box .item-info .info-tag1,.hotList .box .item-info .info-tag2,.hotList .box .item-info .info-tips,.hotList .box .details .details-title .info-tips2 { display: inline-block;*display: inline;*zoom: 1;vertical-align: middle; }
+
+
+
+
+.hotList .box .item-grade { position: relative;z-index: 2;width: 62px;height: 87px;line-height: 82px;margin-right: 25px;font-weight: bold;font-size: 20px;text-align: center;color: #f7d1ff;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/new-icon-level.png) no-repeat;background-size: 100%; }
+/*.hotList .box .item-grade span { color: transparent;background-image: linear-gradient(to bottom,#4c3814 40%,#4c3814);-webkit-background-clip: text;background-clip: text; }*/
+.hotList .box .item-grade.null { font-size: 0;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/null-line.png) no-repeat center center;background-size: auto 100%; }
+.hotList .box .item-member { width: 555px;text-align: left;position: relative; }
+.hotList .box .item-member::after { content: "";width: 2px;height: 79px;position: absolute;top: -1px;right: 24px;pointer-events: none;background: -webkit-linear-gradient(bottom, transparent 10%,rgba(109, 244, 219, .4) 50%,transparent 100%); }
+.hotList .box .item:hover .item-member::after,.hotList .box.unfold .item-member::after,.hotList .box.unfold .item:hover .item-member::after { background: -webkit-linear-gradient(bottom, transparent 10%,#37667d 50%,transparent 100%); }
+.hotList .box .item-member li { width: 55px;text-align: center;position: relative;display: inline-block;*display: inline;*zoom: 1;margin: 0 1px; }
+
+.hotList .box .item-member .member-pic{position: relative; border-radius: 50%; width: 37px; height: 37px; overflow: hidden; margin: 0 auto;}
+.hotList .box .item-member .member-pic>img{display: block; width: 120%; height: 120%; margin-left:-5px; margin-top: -5px;}
+.cost1{border: 2px solid #999;}
+.cost2{border: 2px solid #5fcc29;}
+.cost3{border: 2px solid #297acc;}
+.cost4{border: 2px solid #cc29cc;}
+.cost5{border: 2px solid #cca329;}
+.cost6{border: 2px solid #ff3630;}
+
+.hotList .box .item-member .member-equip{width: 100%; text-align: center;  position: absolute; top: 50%; left: 0; line-height: 1; margin-top: 2px; cursor: pointer;}
+.hotList .box .item-member .equip-box{width: 14px; height: 14px; border: 1px solid #11044C; display: inline-block; *display: inline; *zoom:1; vertical-align: middle;}
+.hotList .box .item-member .equip-box img{width: 100%; height: 100%;}
+.hotList .box .item-member .member-name{width: 200%; font-size: 12px; text-align: center; color: #f2f0ff; margin-top: 14px; margin-left: -50%;}
+
+.hotList .box .item-member .icon-star{width: 33px; height: 14px; background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/icon-star.png) no-repeat; background-size: 100%; position: absolute; top: -10px; left: 11px;}
+.hotList .box .item-member .icon-carry{width: 12px; height: 14px; background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/icon-carry.png) no-repeat; background-size: 100%; position: absolute; top: 11px; right: 2px;}
+
+.hotList .box.unfold {background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/item-bg.png) no-repeat;background-size: 973px 106px;min-height: 450px;padding-bottom: 26px; }
+.hotList .box.unfold::after {content: '';position: absolute;top: 0;left: 0;height: 100%;width: 100%;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/bgone.png) no-repeat;background-size: 100% 100%;min-height: 450px;z-index: -1; }
+
+.hotList .box.unfold .box-backdrop { pointer-events: none;position: absolute;top: 0px;right: 0px;width: 973px;height: 100%;background-image: url('//game.gtimg.cn/images/lol/act/a20220217tftset65/item-unfold-border-bottom.png');background-repeat: no-repeat;background-size: 100% auto;background-position: center bottom; }
+.hotList .box.unfold .box-backdrop::before { content: '';position: absolute;top: -1px;left: 0px;width: 100%;height: 107px;background-image: url('//game.gtimg.cn/images/lol/act/a20220217tftset65/item-unfold-border-top.png');background-repeat: no-repeat;background-size: 100% 100%;z-index: 10;}
+.hotList .box.unfold .box-backdrop::after { content: '';position: absolute;top: 100px;left: 0px;width: 100%;height: calc(100% - 200px);background-image: url('//game.gtimg.cn/images/lol/act/a20220217tftset65/item-unfold-border-repeat.png');background-repeat: no-repeat;background-size: 100% 100%; }
+
+.hotList .box .details{font-size: 0; padding-left: 18px; display: none;}
+.hotList .box.unfold .details{display: block;}
+
+.hotList .box .details .details-title{font-size: 15px; line-height: 15px; font-weight: bold; color: #ffd861; text-align: left; margin-right: 23px;}
+.hotList .box .details .title-icon{width: 10px; height: 15px; background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/unfold-title-icon.png) no-repeat; background-size: 100%; display: inline-block; *display: inline; *zoom:1; vertical-align: middle; margin-right: 8px;}
+
+.hotList .box .details .interim-box,.hotList .box .details .interim,
+.hotList .box .details .order-box{display: flex; display: -webkit-flex; align-items: center; position: relative; flex-wrap: wrap;}
+.hotList .box .details .interim-box { flex-wrap: wrap;position: relative;padding-left: 101px; }
+.hotList .box .details .interim-box .details-title { position: absolute;top: 9px;left: 0; }
+.hotList .box .details .job-box { text-align: left;padding-right: 120px;position: relative;padding-left: 101px; }
+.hotList .box .details .job-box .details-title { display: inline-block;*display: inline;*zoom: 1;vertical-align: middle;position: absolute;top: 9px;left: 0; }
+
+
+.hotList .box .details .interim-box3 { flex-wrap: wrap;position: relative;padding-left: 101px; display:-webkit-flex;align-items: center;}
+.hotList .box .details .interim-box3 .details-title { position: absolute;top: 3px;left: 0; }
+.hotList .box .interim-box3{margin-top: 20px;}
+.interim-box3 .details-title{display: inline-block; *display: inline; *zoom:1; vertical-align: top;}
+.interim-box3 .interim-title { font-size: 12px;color: #daeaff;margin-right: 16px; }
+.interim-box3 .interim{margin-right: 60px;}
+.interim-box3 .hex{
+    display: -webkit-flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+.interim-box3 .hex  .hex-msg{width: 33px; height: 33px; position: relative;  display: inline-block; *display: inline; *zoom:1; vertical-align: middle; margin-right: 6px;}
+.interim-box3 .hex  .hex-pic{position: relative; border-radius: 50%; width: 29px; height: 29px; overflow: hidden; margin: 0 auto;}
+.interim-box3 .hex  .hex-pic img{
+    display: block;
+    width: 120%;
+    height: 120%;
+    margin-left: -3px;
+    margin-top: -3px;
+}
+.interim-box3 .hex2{margin-left: 60px;}
+
+
+
+
+.hotList .box .details .job-name{margin-top: 4px; width: auto; height: 22px; line-height: 22px; font-size: 13px; color: #ebeae1; text-align: center; background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/job-name.png) no-repeat; background-size: 100% 100%; position: relative; display: inline-block; *display: inline; *zoom:1; vertical-align: middle; margin-right: 15px; margin-bottom: 10px;}
+.hotList .box .details .job-name .name-icon{width: 27px; height: 31px; position: absolute; top: -5px; left:-1px;}
+.job1{background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/job-icon1.png) no-repeat; background-size: 100%;}
+.job2{background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/job-icon2.png) no-repeat; background-size: 100%;}
+.job3{background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/job-icon3.png) no-repeat; background-size: 100%;}
+.job4{background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/job-icon4.png) no-repeat; background-size: 100%;}
+.hotList .box .details .job-name .name-icon img { position: absolute;top: 50%;left: 50%;height: 18px;transform: translate(-50%,-50%);object-fit: cover; }
+.hotList .box .details .job-name .name-txt { padding-left: 31px;padding-right: 5px; }
+.hotList .box .details .btn-job { width: 95px;height: 36px;color: #f7d1ff;font-size: 12px;text-align: center;line-height: 25px;text-shadow: 1px 1px 2px rgba(168, 95, 0, 0.5);background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/job-btn.png) no-repeat;background-size: 100%;float: right;margin-right: 40px;position: absolute;top: 0;right: 0; }
+.hotList .box .interim .interim-title { font-size: 12px;color: #daeaff;margin-right: 16px; }
+
+.hotList .box .interim-box{margin-top: 20px;}
+.hotList .box .interim .interim-msg{width: 33px; height: 33px; position: relative;  display: inline-block; *display: inline; *zoom:1; vertical-align: middle; margin-right: 6px;}
+.hotList .box .interim2 .interim-msg{ margin-right: 9px;}
+.hotList .box .interim .interim-pic{position: relative; border-radius: 50%; width: 29px; height: 29px; overflow: hidden; margin: 0 auto;}
+.hotList .box .interim .interim-pic>img{display: block; width: 120%; height: 120%; margin-left:-3px; margin-top: -3px;}
+.hotList .box .interim .interim-equip{width: 200%; text-align: center; margin-left: -50%; position: absolute; bottom: -12px;}
+.hotList .box .interim .interim-equip .equip-box{width: 15px; height: 15px; background: #000; position: relative; display: inline-block; *display: inline; *zoom:1; vertical-align: middle;}
+.hotList .box .interim .interim-equip .equip-box>img{width: 13px; height: 13px; display: block; margin: 1px 0 0 1px;}
+
+.hotList .box .interim{margin-bottom: 35px;}
+.hotList .box .interim {margin-right: 60px;}
+.hotList .box .interim:last-of-type {margin-right: 0;}
+
+.hotList .box .backup-box { display: flex;flex-wrap: wrap;padding-left: 101px;margin-bottom: 30px;}
+.hotList .box .backup-box .backup-title { font-size: 12px;color: rgba(255,255,255,.8);margin-right: 16px; line-height: 33px;}
+.hotList .box .backup-box .backup-list { display: flex;flex-wrap: wrap;}
+.hotList .box .backup-box .interim-msg{width: 33px; height: 33px; position: relative;  display: inline-block; *display: inline; *zoom:1; vertical-align: middle; margin-right: 6px;}
+.hotList .box .backup-box .interim-pic{position: relative; border-radius: 50%; width: 29px; height: 29px; overflow: hidden; margin: 0 auto;}
+.hotList .box .backup-box .interim-pic>img{display: block; width: 120%; height: 120%; margin-left:-3px; margin-top: -3px;}
+.hotList .box .backup-box .interim-equip{width: 200%; text-align: center; margin-left: -50%; position: absolute; bottom: -12px;}
+.hotList .box .backup-box .interim-equip .equip-box{width: 15px; height: 15px; background: #000; position: relative; display: inline-block; *display: inline; *zoom:1; vertical-align: middle;}
+.hotList .box .backup-box .interim-equip .equip-box>img{width: 13px; height: 13px; display: block; margin: 1px 0 0 1px;}
+.hotList .box .interim-group { display: flex;align-items: center;margin-right: 30px; }
+.hotList .box .interim-group .interim-msg + .interim-msg { margin-left: 10px; }
+.hotList .box .interim-arrow { width: 14px;height: 10px;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/order-icon.png) no-repeat;background-size: 100%;margin-right: 10px;margin-left: 5px; }
+
+.hotList .box .details .order-box{margin-bottom: 30px;}
+.hotList .box .details .order{margin-right: 7px;}
+.hotList .box .details .order.order-equip-sort { margin-top: 20px; margin-left: 159px; width: 80%; }
+.hotList .box .details .order-pic{position: relative; border-radius: 50%; width: 29px; height: 29px; overflow: hidden; margin-right: 10px;}
+.hotList .box .details .order-pic>img{display: block; width: 120%; height: 120%; margin-left:-3px; margin-top: -3px;}
+.hotList .box .details .order-title,.hotList .box .details .order-equip,.hotList .box .details .order-icon{display: inline-block; *display: inline; *zoom:1; vertical-align: middle;}
+.hotList .box .details .order-title{font-size: 12px; color: #daeaff; margin-right: 15px;}
+.hotList .box .details .order-equip .equip-box{width: 26px; height: 26px; background: #000; position: relative; display: inline-block; *display: inline; *zoom:1; vertical-align: middle; margin-right: 10px;}
+.hotList .box .details .order-equip .equip-box>img{width: 24px; height: 24px; display: block; margin: 1px 0 0 1px;}
+.hotList .box .details .order-icon{width: 14px; height: 10px; background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/order-icon.png) no-repeat; background-size: 100%; margin-right: 10px;}
+
+.hotList .box .position-box{margin-bottom: 0px;}
+.hotList .box .position-box .details-title{display: inline-block; *display: inline; *zoom:1; vertical-align: top;}
+.hotList .box .position-box .position-bg{width: 202px; height: 95px; background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/position-bg.png) no-repeat; background-size: 100% 100%; position: relative; margin-right: 33px;}
+.hotList .box .position-box .champion{position: absolute; width: 23px; height: 24px; -webkit-clip-path: polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%); clip-path: polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%); z-index: 10; cursor: pointer;}
+.hotList .box .position-box .champion img {width: 110%; height: 110%; position: absolute; top: -5%; left: -5%; object-fit: cover;}
+.position1-1{top: 2px; left: 1px;}
+.position1-2{top: 2px; left: 29px;}
+.position1-3{top: 2px; left: 56px;}
+.position1-4{top: 2px; left: 84px;}
+.position1-5{top: 2px; left: 111px;}
+.position1-6{top: 2px; left: 139px;}
+.position1-7{top: 2px; left: 166px;}
+
+.position2-1{top: 25px; left: 13px;}
+.position2-2{top: 25px; left: 41px;}
+.position2-3{top: 25px; left: 68px;}
+.position2-4{top: 25px; left: 96px;}
+.position2-5{top: 25px; left: 124px;}
+.position2-6{top: 25px; left: 151px;}
+.position2-7{top: 25px; left: 179px;}
+
+.position3-1{top: 47px; left: 1px;}
+.position3-2{top: 47px; left: 29px;}
+.position3-3{top: 47px; left: 56px;}
+.position3-4{top: 47px; left: 84px;}
+.position3-5{top: 47px; left: 111px;}
+.position3-6{top: 47px; left: 139px;}
+.position3-7{top: 47px; left: 166px;}
+
+.position4-1{top: 69px; left: 13px;}
+.position4-2{top: 69px; left: 41px;}
+.position4-3{top: 69px; left: 68px;}
+.position4-4{top: 69px; left: 96px;}
+.position4-5{top: 69px; left: 124px;}
+.position4-6{top: 69px; left: 151px;}
+.position4-7{top: 69px; left: 179px;}
+
+.hotList .box .position-box .position-title{width: 21px; height: 50px; font-size: 0; text-align: center; background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/position-title1.png) no-repeat; background-size: 100%; position: relative; margin-right: 16px;}
+.hotList .box .position-box .position-title p{width: 11px; height: 50px; font-size: 12px; color: #daeaff; position: absolute; top: 0; left: 4px; padding-top: 7px;}
+
+.hotList .box .position-box .position-item,.hotList .box .position-box .position-title,.hotList .box .position-box .position-bg,.hotList .box .position-box .position-tab{display: inline-block; *display: inline; *zoom:1; vertical-align: top;}
+
+.hotList .box .position-box .position-tab{width: 21px; height: 100%; margin-right: 16px;}
+.hotList .box .position-box .position-tab .itab {width: 19px; height: 45px; font-size: 0; background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/position-title1.png) no-repeat; background-size: 100%; position: relative; cursor: pointer; z-index: 10; filter: brightness(0.5);}
+.hotList .box .position-box .position-tab .itab.on{filter: unset;}
+.hotList .box .position-box .position-tab .itab.itab1{margin-bottom: 6px;}
+.hotList .box .position-box .position-tab .itab p{width: 11px; line-height: 11px; text-align: center; height: 53px; font-size: 12px; color: #FFFFFF; position: absolute; top: 6px; left: 3px;}
+/* hotList end */
+
+/* tc */
+
+.pop-focus { width: 600px;height: 442px;font-size: 0;text-align: left;padding-top: 20px;position: relative; transform: translateY(-17%);}
+.pop-focus::after { content: "";width: 602px;height: 459px;pointer-events: none;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/pop-hero-bg.png) no-repeat;background-size: 100% 100%;position: absolute;top: -13px;left: -10px; z-index: -1;}
+.pop-focus .focus-box { width: 580px;height: 416px;margin: 0 3px;padding: 0 10px;overflow-x: hidden;overflow-y: scroll; }
+.pop-focus .focus-box li { margin-bottom: 5px; }
+.pop-focus .focus-box h2 { font-size: 14px;line-height: 14px;font-weight: bold;color: #ffd861;margin-bottom: 7px; }
+.pop-focus .focus-box h2 i { width: 10px;height: 12px;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/unfold-title-icon.png) no-repeat;background-size: 100%;display: inline-block;*display: inline;*zoom: 1;margin-right: 8px;vertical-align: middle; }
+.pop-focus .focus-box p { width: 530px;font-size: 12px;line-height: 1.5;color: #dde6ff;margin-bottom: 5px;padding-left: 18px;opacity: 0.8;}
+.pop-focus .dia-close { width: 20px;height: 20px;display: block;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/pop-focus-close.png) no-repeat;background-size: 100%;position: absolute;top: 0px;right: 20px;z-index: 2; }
+
+.hover1 {pointer-events: none; display: flex;align-items: center;position: absolute;top: 30px;left: -75px;top: 0;left: 0;z-index: 10000;width: 280px;min-height: 100px;line-height: 1.5;font-size: 11px;color: #DFFEF8;background: #24345c; }
+.hover1-cont { display: flex;position: relative;width: 100%;height: 100%;padding: 8px 0; }
+.hover1-backdrop { position: absolute;top: 0px;left: 0px;width: 280px;height: 100%;
+}
+.hover1-backdrop::before { content: '';position: absolute;top: 0px;left: 0;width: 280px; height: 2px; background: #6baaff; }
+.hover1-backdrop::after { content: '';position: absolute;bottom: 0px;left: 0;width: 280px;height: 2px; background: #be7eff; }
+
+.hover1-backdrop .hover1-border{width: 100%;	height: 100%; position: relative;}
+.hover1-backdrop .hover1-border::before{ content: '';position: absolute;top: 2px;left: 0;width: 2px;height: calc(100% - 4px); background-image: linear-gradient(to bottom, #6baaff, #be7eff);}
+.hover1-backdrop .hover1-border::after{ content: '';position: absolute;top: 2px;right: 0;width: 2px;height: calc(100% - 4px); background-image: linear-gradient(to bottom, #6baaff, #be7eff);}
+
+.hover1-cont { text-align: center; }
+.hover1-text { width: 100%;padding: 0 8px; }
+
+.hover2 { width: 240px;height: auto;font-size: 0;background: #24345c;position: absolute;z-index: 10000; }
+.hover2-cont { width: 100%;height: 100%;position: relative;padding: 10px 0; }
+.hover2-cont::after,.hover2-cont::before { content: '';position: absolute;top: 2px; right: 0; width: 2px;height: calc(100% - 4px); background-image: linear-gradient(to bottom, #6baaff, #be7eff); z-index: 2;}
+.hover2-cont::before { left: 0; right: auto; }
+.hover2-border1 {width: 239px; height: 2px; position: absolute; top: 0px; left: 0; background: #6baaff; z-index: 3; }
+.hover2-border2 {width: 239px; height: 2px; position: absolute; bottom: 0px; left: 0; background: #be7eff; z-index: 3; }
+.hover2-border3 {width: 239px; height: 2px; position: absolute; bottom: 0px; left: 0; background: #be7eff; z-index: 3; }
+
+.hover2-box1{padding-bottom: 8px; border-bottom: 1px solid #4f9f99;  padding-left: 9px; text-align: left;}
+.hover2-equip{width: 25px; height: 25px; background:transparent; border:1px transparent solid; border-image:linear-gradient(to right,#695123, #D2B272) 1 10; border-radius: 50%;}
+.hover2-equip>img{width: 25px; height: 25px; display: block; object-fit: cover;}
+.hover2-msg{margin-left: 7px;}
+.hover2-title{font-size: 12px; color: #CDBE91; text-align: left;}
+.hover2-text{width: 180px; font-size: 12px; color: #DFFEF8; text-align: left;}
+.hover2-equip,.hover2-msg{display: inline-block; *display: inline; *zoom:1; vertical-align: top;}
+
+.hover2-box2{margin-top: 5px; padding-left: 9px; text-align: left;}
+.hover2-box2>p{width: 28px; font-size: 12px; color: #DFFEF8;}
+.hover2-formula{width: 22px; height: 22px; border: 1px solid #857144; background: #000; margin-right: 7px; margin-left: 5px;}
+.hover2-formula>img{width: 22px; height: 22x; display: block; object-fit: cover;}
+.hover2-box2>p,.hover2-formula{display: inline-block; *display: inline; *zoom:1; vertical-align: top;}
+
+.hover3 { width: 272px;height: auto;font-size: 0;background: #24345c;position: absolute;z-index: 10000; }
+.hover3-cont { width: 100%;height: 100%;position: relative;padding: 7px 0; }
+.hover3-cont::after,.hover3-cont::before { content: '';position: absolute;top: 2px; right: 0; width: 2px;height: calc(100% - 4px); background-image: linear-gradient(to bottom, #6baaff, #be7eff); z-index: 2;}
+.hover3-cont::before { left: 0; right: auto; }
+.hover3-border1 {width: 272px; height: 2px; position: absolute; top: 0px; left: 0; background: #6baaff; z-index: 3; }
+.hover3-border2 {width: 272px; height: 2px; position: absolute; bottom: 0px; left: 0; background: #be7eff; z-index: 3; }
+.hover3 p { font-size: 12px;color: #dde6ff;text-align: left; }
+
+.hover3-box1{padding: 0 10px;}
+.hover3-box1 h2{font-size: 14px; color: #6df4db; text-shadow: 1px 1px 2px rgba(0,0,0,.5);}
+.hover3-box1>p{margin: 5px 0 0 -5px; padding: 0 5px;}
+.hover3-box1 .hover3-icon { height: 16px;display: inline-block;*display: inline;*zoom: 1;vertical-align: bottom;margin-right: 6px;position: relative;font-size: 0;text-align: center;overflow: hidden;filter: contrast(.1) brightness(10); }
+.hover3-box1 .hover3-icon>img { height: 100%; }
+
+.hover3-box2{text-align: left; border-top: 1px solid #5c5bc3; border-bottom: 1px solid #5c5bc3; margin: 10px auto; padding: 10px 10px 0;}
+.hover3-box2 li{margin-bottom: 10px;}
+.hover3 .hover3-box2 .hover3-num{font-style: normal; width: 12px; height: 12px; line-height: 12px; text-align: center; border: 1px solid #A6A395; border-radius: 50%;  display: inline-block; *display: inline; *zoom:1; vertical-align: baseline; margin-right: 3px;}
+
+.hover3 .hover3-box3{padding-left: 10px;}
+.hover3 .hover3-box3 .hover3-hero,.hover3 .hover3-box3 .hero-pic,.hover3 .hover3-box3 p{ display: inline-block; *display: inline; *zoom:1; vertical-align: middle; width: 226px;}
+.hover3 .hover3-box3 p{width: 33px; vertical-align: top; color: #6df4db;}
+.hover3 .hover3-box3 .hero-pic{position: relative; border-radius: 50%; width: 25px; height: 25px; overflow: hidden; display: inline-block; *display: inline; *zoom:1; vertical-align: middle;margin: 0 3px 3px 0; }
+.hover3 .hover3-box3 .hero-pic:last-child{margin-right: 0;}
+.hover3 .hover3-box3 .hero-pic>img{display: block; width: 120%; height: 120%; margin-left: -3px; margin-top: -2px;}
+
+.hover4 { width: 320px;height: auto;font-size: 0;text-align: left;background-image: linear-gradient(45deg,#231b87 60%,#3a3d8e);position: absolute;pointer-events: none;z-index: 10000; }
+.hover4-cont { width: 100%;height: 100%;position: relative; }
+.hover4-cont::after,.hover4-cont::before { content: '';position: absolute;top: 2px; right: 0; width: 2px;height: calc(100% - 4px); background-image: linear-gradient(to bottom, #6baaff, #be7eff); z-index: 2;}
+.hover4-cont::before { left: 0;right: auto; }
+.hover4-border1 {width: 320px; height: 2px; position: absolute; top: 0px; left: 0; background: #6baaff; z-index: 3; }
+.hover4-border2 {width: 320px; height: 2px; position: absolute; bottom: 0px; left: 0; background: #be7eff; z-index: 3; }
+
+.hover4 .hover4-box1 { width: 100%;height: 68px;border-bottom: 1px solid #5b67c8;font-size: 12px;color: #ebffcf;text-align: center;display: flex;display: -webkit-flex;align-items: center;justify-content: center; }
+.hover4 .hover4-box1 .hover4-name { width: 100px; color: #ebeae1;}
+.hover4 .hover4-box1 .hover4-pic { position: relative;border-radius: 50%;width: 40px;height: 40px;overflow: hidden;display: block;margin: 5px auto 0; }
+.hover4 .hover4-box1 .hover4-pic>img { display: block;width: 120%;height: 120%;margin-left: -5px;margin-top: -5px; }
+
+.hover4 .hover4-box1 .hover4-tie { width: 130px;height: 100%;border-left: 1px solid #7c97f8;border-right: 1px solid #7c97f8;display: flex;display: -webkit-flex;flex-wrap: wrap;align-items: center; }
+.hover4 .hover4-box1 .hover4-tie>p { width: 130px;height: 19px;line-height: 19px;text-align: left;padding-left: 8px; }
+.hover4 .hover4-box1 .hover4-tie .tie-icon { display: inline-block;*display: inline;*zoom: 1;vertical-align: middle;position: relative;width: 15px;height: 14px;font-size: 0;text-align: center;overflow: hidden;margin-right: 5px;filter: contrast(.1) brightness(10); }
+.hover4 .hover4-box1 .hover4-tie .tie-icon img { height: 100%; }
+
+.hover4 .hover4-box1 .hover4-price{width: 80px; color: #6df4db;}
+.hover4 .hover4-box1 .price-icon{width: 15px; height: 12px; background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/price-icon.png) no-repeat; background-size: 100%; display: block; margin: 0 auto 6px;}
+
+.hover4 .hover4-left{font-size: 12px; color: #6df4db; margin: 0 10px 0 15px;}
+.hover4 .skill-text{font-size: 12px; color: #6df4db;}
+.hover4 .skill-text .skill-text2{color: #8B8F84;}
+
+.hover4 .hover4-equip,.hover4 .hover4-skill{width: 23px; height: 23px; background:transparent; border:1px transparent solid; border-image:linear-gradient(to right,#695123, #D2B272) 1 10; margin-right: 5px;}
+.hover4 .hover4-equip>img,.hover4 .hover4-skill>img{width: 23px; height: 23px; display: block; object-fit: cover;}
+.hover4 .hover4-left,.hover4 .hover4-equip,.hover4-skill,.hover4 .skill-text{display: inline-block; *display: inline; *zoom:1; vertical-align: middle; margin-top: 10px;}
+.hover4 .skill-msg{width: 250px; font-size: 12px; color: #dde6ff; padding: 7px 0 10px 46px;}
+
+.pop-hero { width: 408px;height: 408px;font-size: 0;background: #24345c; }
+.pop-hero .hero-cont { width: 100%;height: 100%;position: relative; }
+.pop-hero .hero-cont::before { content: "";pointer-events: none;width: 414px;height: 423px;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/pop-hero-bg.png) no-repeat;background-size: 100% 100%;position: absolute;top: -16px;left: -3px; }
+.pop-hero .hero-top { position: relative;width: 100%;height: 40px;line-height: 40px;font-size: 14px;font-weight: bold;color: #d9c67a;text-align: center;border-bottom: 1px solid #8f7c4a; }
+.pop-hero .hero-left,.pop-hero .hero-right { position: relative;display: inline-block;*display: inline;*zoom: 1;vertical-align: top; }
+
+.pop-hero .hero-left{width: 145px;}
+.pop-hero .hero-left .left-box1,.pop-hero .hero-left .left-box2,.pop-hero .hero-left .left-box3{padding-left: 10px;}
+.pop-hero .hero-left .left-box1{width: 139px; height: 60px; text-align: center; display: flex; display: -webkit-flex; align-items: center; justify-content: left;}
+.pop-hero .hero-left .left-box1 .left-pic{position: relative; border-radius: 50%; width: 39px; height: 39px; overflow: hidden; margin-right: 10px;}
+.pop-hero .hero-left .left-box1 .left-pic>img{display: block; width: 120%; height: 120%; margin-top: -5px; margin-left: -5px;}
+.pop-hero .hero-left .left-box1 .left-name{font-size: 12px; font-weight: bold; color: #FFF5E0;}
+.pop-hero .hero-left .left-box1 .left-price{font-size: 12px; color: #FFE09C;}
+.pop-hero .hero-left .left-box1 .left-price i{width: 8px; height: 6px; display: inline-block; *display: inline; *zoom: 1; vertical-align: middle; background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/price-icon.png) no-repeat; background-size: 100% 100%; margin-right: 4px;}
+
+.pop-hero .hero-left .left-box2 { padding-top: 5px;border-top: 1px solid #8f7c4a;border-bottom: 1px solid #8f7c4a; }
+.pop-hero .hero-left .left-box2 li { height: 18px;font-size: 0;text-align: left;color: #FFF5E0;text-shadow: 1px 1px 2px rgba(0,0,0,.5); }
+.pop-hero .hero-left .left-box2 .left-icon,.pop-hero .hero-left .left-box2 .left-job { display: inline-block;*display: inline;*zoom: 1;vertical-align: middle; }
+.pop-hero .hero-left .left-box2 .left-icon { position: relative;width: 18px;height: 14px;margin-right: 2px;font-size: 0;text-align: center;overflow: hidden;filter: contrast(.1) brightness(10); }
+.pop-hero .hero-left .left-box2 .left-icon > img { height: 100%; }
+.pop-hero .hero-left .left-box2 .left-job { font-size: 12px; }
+
+.pop-hero .hero-left .left-box3{font-size: 0;  text-align: left;}
+.pop-hero .hero-left .left-box3 .help{font-size: 12px; color: #FFF5E0; font-weight: bold; margin: 7px 0 9px;}
+.pop-hero .hero-left .left-box3 .help-pic{position: relative; border-radius: 50%; width: 23px; height: 23px; overflow: hidden; margin: 0 3px 5px 0; display: inline-block; *display: inline; *zoom:1; vertical-align: middle;}
+.pop-hero .hero-left .left-box3 .help-pic>img{display: block; width: 120%; height: 120%; margin-left: -2px; margin-top: -2px;}
+
+.pop-hero .hero-right{width: 258px; height: 363px;border-left: 1px solid #8f7c4a; overflow-y: scroll;}
+
+.pop-hero .hero-right .right-skill{padding:0 3px 0 10px; padding-bottom: 5px; border-bottom: 1px solid #8f7c4a;}
+.pop-hero .hero-right .skll-title{font-size: 12px; font-weight: bold;  color: #FFF5E0; margin: 10px 0 3px 0;}
+.pop-hero .hero-right .skll-box-msg .skill,.pop-hero .hero-right .skll-box-msg .skill-explain{display: inline-block; *display: inline; *zoom: 1; vertical-align: top;}
+.pop-hero .hero-right .skll-box-msg .skill{width: 35px; height: 35px; background:transparent; border:1px transparent solid; border-image:linear-gradient(to right,#695123, #D2B272) 1 10; margin-right: 5px;}
+.pop-hero .hero-right .skll-box-msg .skill>img{width: 33px; height: 33px; display: block; object-fit: cover; margin: 1px;}
+.pop-hero .hero-right .skll-box-msg .explain1{font-size: 12px; color: #CDBE91;}
+.pop-hero .hero-right .skll-box-msg .explain2{font-size: 12px; color: #8B8F84;}
+.pop-hero .hero-right .skll-box-msg .skill-des,.pop-hero .hero-right .left-job-text{font-size: 12px; color: #DFFEF8; text-align: left; margin-top: 5px;}
+
+.pop-hero .hero-right .right-equipment{padding:0 3px 0 10px; padding-bottom: 5px; border-bottom: 1px solid #8f7c4a; font-size: 12px;}
+.pop-hero .hero-right .right-equipment .equip-title{font-size: 12px; font-weight: bold;  color: #FFF5E0; margin: 10px 0 3px 0;}
+.pop-hero .hero-right .right-equipment .equip-box { margin: 3px; display: inline-block; border-image: linear-gradient(to right,#695123,#D2B272) 1 10; background:transparent; border:1px transparent solid; border-image:linear-gradient(to right,#695123, #D2B272) 1 10;}
+.pop-hero .hero-right .right-equipment .equip-box img{width: 33px; margin: 1px; display: block;}
+
+.pop-hero .hero-right .relation-title { padding: 5px 3px 5px 10px; border-bottom: 1px solid #8f7c4a; }
+.pop-hero .hero-right .left-icon,.pop-hero .hero-right .left-job { display: inline-block;*display: inline;*zoom: 1;vertical-align: middle; }
+.pop-hero .hero-right .left-icon { position: relative;width: 18px;height: 14px;margin-right: 2px;font-size: 0;text-align: center;overflow: hidden;filter: contrast(.1) brightness(10); }
+.pop-hero .hero-right .left-icon>img { height: 100%; }
+.pop-hero .hero-right .left-job { font-size: 12px;color: #FFF5E0; }
+.pop-hero .hero-right .left-job-text { margin-bottom: 10px; }
+.pop-hero .hero-right .job-text-txt { font-size: 12px;color: #DFFEF8;display: block;line-height: 14px;position: relative;padding-left: 15px;margin-bottom: 5px;text-align: left; text-indent: 2px}
+.pop-hero .hero-right .job-text-txt span { line-height: 14px;position: absolute;top: 0;left: 0;width: 14px;height: 14px;border: 1px solid #DFFEF8;border-radius: 50%;box-sizing: border-box;display: flex;justify-content: center;align-items: center;align-content: center; text-indent: 0;}
+.pop-hero .dia-close { width: 20px;height: 20px;display: block;background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/pop-focus-close.png) no-repeat;background-size: 100%;position: absolute;top: -4px;right: 10px;z-index: 2; }
+
+/* čżć¸Ąçžçť */
+.transit-job{padding-left: 101px; margin-bottom: 30px;}
+.transit-job,.transit-box{display: flex; display: -webkit-flex; align-items: center; }
+.transit-job .transit-title{font-size: 12px; color: #daeaff; margin-right: 16px;}
+
+.transit-info{width: auto; height: 20px; line-height: 20px; font-size: 12px; color: #daeaff; text-align: center; background: url(//game.gtimg.cn/images/lol/act/a20220217tftset65/interim-info.png) no-repeat; background-size: 100% 100%; position: relative; margin-right: 7px;}
+.transit-icon{width: 19px; height: 22px; position: absolute; top: -1px; left: 0; text-align: center; line-height: 24px;}
+.transit-icon img{height: 12px; object-fit: cover; display: inline-block; }
+.transit-name{padding-left: 21px; padding-right: 5px;}
+
+.transit-info + .transit-title { position: relative;margin-left: 26px; }
+.transit-info + .transit-title::after { content: '';position: absolute;top: 50%;left: -18px;width: 1px;height: 19px;background: linear-gradient(to bottom,transparent,#34DDBD,transparent);transform: translateY(-50%);opacity: 0.5; }
+.hidden { display: none !important}
+
+.bglinear { background: linear-gradient(to bottom,rgba(0,0,0,0) 0%,#000000 100%); position: absolute; left: 0; bottom: 0; width: 100%; height: 30px; z-index: 99999; pointer-events: none;}
+/* #t6Hl8#8941D41EB035E611371089AA2C97CE93 */
+
+
+
+/* .order-box div:nth-child(8){
+  display: none !important;
+} */
